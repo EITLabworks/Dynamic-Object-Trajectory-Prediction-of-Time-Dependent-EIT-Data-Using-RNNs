@@ -15,11 +15,13 @@ $$
 \Gamma := \Xi \circ \Psi : \mathbf{V} \mapsto \mathbf{h} \mapsto \hat{\gamma}_{t+1}
 $$
 
-where $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation for time $t+1$, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution for time $t+1$.
-
-
+where $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution for time $t+1$.
 
 ## Training of reconstruction network
+
+The training of the reconstruction network was carried out in two stages. In the first training stage, the VAE was trained unsupervised using synthetically generated conductivity distributions (for 2D and 3D space).
+For the 2D space, a triangular mesh of the electrode plane of a cylindrical tank was used. In 3D space, a voxel-based method was used.
+After the first training stage, the LSTM mapper was trained in a supervised manner. Here, the VAE encoder was used to generate a latent representation of known conductity distributions, which were used as labels for the supervised learning of the lstm mapper. The voltage sequence was then paired with the corresponding latent representation of the future conductivity distribution. 
 
 ## EIT data collection
 
