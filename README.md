@@ -4,7 +4,7 @@ This project presents a novel approach for dynamic image reconstruction of Elect
 
 ## Reconstruction network architecture
 
-The reconstruction model consits of two core components: a mapper with an integrated LSTM layer at the output and a VAE decoder. The architecture is illustrated in figure...
+The reconstruction model consists of two core components: a mapper with an integrated LSTM layer at the output and a VAE decoder. The architecture is illustrated in figure...
 
 The LSTM mapper, denoted as $\Xi$, processes temporal sequences of voltage measurements and maps it to the latent space $\mathbf{h}$. Subsequently, the VAE decoder, denoted as $\Psi$, reconstructs the latent representation into a conductivity distribution. The complete reconstruction network $\Gamma$ is defined as the composition of these mapping processes:
 
