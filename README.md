@@ -25,4 +25,8 @@ After the first training stage, the LSTM mapper was trained in a supervised mann
 
 ## EIT data collection
 
+The EIT data collection was performed both in a simulation environment using FEM-based simulation with the pyEIT package and in an experimental environment using an EIT water tank. For the 2D data collection, FEM simulation and experimental measurements in a single electrode plane were used, resulting in $32^2$ voltage data for each measurement frame. For the 3D data collection, experimental measurements with two electrode planes were performed, resulting in $64^2$ voltage data for each frame. The EIT data were collected using an acrylic ball following a given trajectory at discrete positions. 
+
+In 2D space a circular, spiral, eight, polynomial, square trajectory were used. In 3D space, the trajectories uses were a helix, a spiral helix and a circular sine wave.
+
 ## Results 
