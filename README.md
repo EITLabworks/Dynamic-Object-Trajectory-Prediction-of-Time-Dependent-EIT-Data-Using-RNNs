@@ -58,7 +58,7 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 
 # 2D experimental model
 
-The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the gifs provided. 
+The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the animation provided. 
 
 <table>
   <tr>
@@ -71,4 +71,16 @@ The 2D experimental model was trained with a spiral trajectory and evaluated on 
   </tr>
 </table>
 
-As an additional test the velocity of the movement along the eight trajectory was increased by increasing the distance between the individual positions. The two gifs show the comparison 
+As an additional test the velocity of the movement along the figure-eight trajectory was increased by increasing the distance between the individual discrete positions along the trajectory. This results in greater spacing between consecutive EIT measurements, reducing spatial correlation between them. Despite this increased distance points, the models demonstrate robust performance, indicating their ability to reliably predict future conductivity distributions regardless of the reduced spatial correlation.
+
+<table>
+  <tr>
+    <td>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif">
+    </td>
+    <td>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif">
+    </td>
+  </tr>
+</table>
+
