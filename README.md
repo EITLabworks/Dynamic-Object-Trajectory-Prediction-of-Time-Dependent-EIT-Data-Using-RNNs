@@ -63,21 +63,21 @@ The 2D experimental model was trained with a spiral trajectory and evaluated on 
 <table>
   <tr>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 10px;">Circle Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">Circle Trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="100%">
     </td>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 10px;">Eight Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">Eight Trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 10px;">Polynomial Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">Polynomial Trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="100%">
     </td>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 10px;">Square Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">Square Trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="100%">
     </td>
   </tr>
