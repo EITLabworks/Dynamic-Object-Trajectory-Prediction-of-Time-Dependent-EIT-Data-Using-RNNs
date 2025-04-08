@@ -56,11 +56,11 @@ The 2D experimental model was trained with a spiral trajectory and evaluated on 
 <table>
   <tr>
     <td><img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="100%"></td>
-    <td><img src="results/2D reconstruction/sim reconstruction/lstm_eight_recon.gif" width="100%"></td>
+    <td><img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="100%"></td>
   </tr>
   <tr>
     <td><img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="100%"></td>
-    <td><img src="results/2D reconstruction/sim reconstruction/lstm_square_recon.gif" width="100%"></td>
+    <td><img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="100%"></td>
   </tr>
 </table>
 
