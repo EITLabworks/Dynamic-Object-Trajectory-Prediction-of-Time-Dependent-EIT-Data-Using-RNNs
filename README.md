@@ -19,7 +19,14 @@ $$
 \Gamma := \Xi \circ \Psi : \mathbf{V} \mapsto \mathbf{h} \mapsto \hat{\gamma}_{t+1}
 $$
 
-Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution at time $t+1$. Figure ... illustrates the working principle of the reconstruction network, demonstration how a sequence of voltage measurements as input of the network is uswd to predict the future conductivity distribution.
+Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution at time $t+1$. Figure 2 illustrates the working principle of the reconstruction network, demonstration how a sequence of voltage measurements as input of the network is uswd to predict the future conductivity distribution.
+
+<p align="center">
+  <img src="images/reconstruction_process.png" alt="Empty_mesh" width="400px">
+</p>
+<p align="center" style="font-size: smaller;">
+  <em>Figure. 1: Architecture of reconstruction model.</em>
+</p>
 
 ## Training of reconstruction network
 
