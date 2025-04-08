@@ -7,7 +7,7 @@ This project presents a novel approach for dynamic image reconstruction of Elect
 The reconstruction model consists of two core components: a mapper with an integrated LSTM layer at the output and a VAE decoder. The architecture is illustrated in figure 1.
 
 <p align="center">
-  <img src="images/reconstruction_model.png" alt="Empty_mesh" width="400px">
+  <img src="images/reconstruction_model.png" alt="Empty_mesh" width="100%">
 </p>
 <p align="center" style="font-size: smaller;">
   <em>Figure. 1: Architecture of reconstruction model.</em>
@@ -22,7 +22,7 @@ $$
 Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution at time $t+1$. Figure 2 illustrates the working principle of the reconstruction network, demonstration how a sequence of voltage measurements as input of the network is uswd to predict the future conductivity distribution.
 
 <p align="center">
-  <img src="images/reconstruction_process.png" alt="Empty_mesh" width="400px">
+  <img src="images/reconstruction_process.png" width="100%">
 </p>
 <p align="center" style="font-size: smaller;">
   <em>Figure. 1: Overview of the reconstruction process of the proposed reconstruction model. A sequence of four voltage measurements is used to predict the conductivity distribution of the next time step.</em>
