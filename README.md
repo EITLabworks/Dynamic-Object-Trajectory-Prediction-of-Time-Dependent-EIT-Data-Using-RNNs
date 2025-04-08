@@ -60,16 +60,26 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 
 The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the animation provided. 
 
-<table align="center">
+<table>
   <tr>
-    <div class="cell-title">Circle Trajectory</div>
-    <td><img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="45%" style="display: block; margin: 0 auto;"></td>
-    <div class="cell-title">Eight Trajectory</div>
-    <td><img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="45%" style="display: block; margin: 0 auto;"></td>
+    <td>
+      <div class="cell-title">Circle Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="45%">
+    </td>
+    <td>
+      <div class="cell-title">Figure-Eight Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="45%">
+    </td>
   </tr>
   <tr>
-    <td><img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="45%" style="display: block; margin: 0 auto;"></td>
-    <td><img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="45%" style="display: block; margin: 0 auto;"></td>
+    <td>
+      <div class="cell-title">Polynomial Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="45%">
+    </td>
+    <td>
+      <div class="cell-title">Square Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="45%">
+    </td>
   </tr>
 </table>
 
