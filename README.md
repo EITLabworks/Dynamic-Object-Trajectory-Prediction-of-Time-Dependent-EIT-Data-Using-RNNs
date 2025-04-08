@@ -53,19 +53,15 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 
 The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the gifs provided. 
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-  <div>
-    <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="100%">
-  </div>
-  <div>
-    <img src="results/2D reconstruction/sim reconstruction/lstm_eight_recon.gif" width="100%">
-  </div>
-  <div>
-    <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="100%">
-  </div>
-  <div>
-    <img src="results/2D reconstruction/sim reconstruction/lstm_square_recon.gif" width="100%">
-  </div>
-</div>
+<table>
+  <tr>
+    <td><img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="100%"></td>
+    <td><img src="results/2D reconstruction/sim reconstruction/lstm_eight_recon.gif" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="100%"></td>
+    <td><img src="results/2D reconstruction/sim reconstruction/lstm_square_recon.gif" width="100%"></td>
+  </tr>
+</table>
 
 As an additional test the velocity of the movement along the eight trajectory was increased by increasing the distance between the individual positions. The two gifs show the comparison 
