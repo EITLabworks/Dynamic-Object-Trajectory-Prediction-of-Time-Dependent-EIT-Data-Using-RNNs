@@ -44,30 +44,21 @@ EIT data were acquired in both simulated and experimental settings. Simultions w
 
 The 2D simulation model was trained on a spiral trajectory and tested on circular and eight shaped trajectory. The results demonstrate high predicition accuracy for the proposed resonstruction network.
 
-<div align="center">
-  <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif" width="45%" />
-  <img src="results/2D reconstruction/sim reconstruction/eight_recon.gif" width="45%" />
-</div>
+<table>
+  <tr>
+    <td>
+      <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif">
+    </td>
+    <td>
+      <img src="results/2D reconstruction/sim reconstruction/eight_recon.gif">
+    </td>
+  </tr>
+</table>
+
 
 # 2D experimental model
 
 The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the gifs provided. 
-
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-  <div>
-    <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="100%">
-  </div>
-  <div>
-    <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="100%">
-  </div>
-  <div>
-    <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="100%">
-  </div>
-  <div>
-    <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="100%">
-  </div>
-</div>
 
 <table>
   <tr>
