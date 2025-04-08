@@ -51,6 +51,10 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 
 # 2D experimental model
 
-The 2D experimental model was trained with a spiral trajectory and evaluated using voltage measurements conducted from circular, polynomial, eight and square trajectories. The network exhibited robust performance across these diverse motion patterns as can be seen in the provided gifs. 
+The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the gifs provided. 
+
+<p align="center">
+  <img src="results/2D reconstruction/exp reconstruction/circle_recon.gif" width="45%">
+</p>
 
 As an additional test the velocity of the movement along the eight trajectory was increased by increasing the distance between the individual positions. The two gifs show the comparison 
