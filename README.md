@@ -25,7 +25,7 @@ Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$
   <img src="images/reconstruction_process.png" alt="Empty_mesh" width="400px">
 </p>
 <p align="center" style="font-size: smaller;">
-  <em>Figure. 1: Architecture of reconstruction model.</em>
+  <em>Figure. 1: Overview of the reconstruction process of the proposed reconstruction model. A sequence of four voltage measurements is used to predict the conductivity distribution of the next time step.</em>
 </p>
 
 ## Training of reconstruction network
