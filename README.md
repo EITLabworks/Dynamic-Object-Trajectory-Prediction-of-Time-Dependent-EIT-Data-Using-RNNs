@@ -7,7 +7,7 @@ This project presents a novel approach for dynamic image reconstruction of Elect
 The reconstruction model consists of two core components: a mapper with an integrated LSTM layer at the output and a VAE decoder. The architecture is illustrated in figure...
 
 <p align="center">
-  <img src="images/reconstruction_model.pdf" alt="Empty_mesh" width="400px">
+  <img src="images/reconstruction_model.png" alt="Empty_mesh" width="400px">
 </p>
 <p align="center" style="font-size: smaller;">
   <em>Fig. 1: Overview of the temporal data arrangement for predicting a subsequent construction based on previous measurements. The blue boxes represent the EIT measurements, and the corresponding cross-sectional conductivity distribution in the electrode plane is depicted in the bottom boxes.</em>
