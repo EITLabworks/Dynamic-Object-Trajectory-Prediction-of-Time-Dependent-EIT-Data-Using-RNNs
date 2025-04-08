@@ -100,3 +100,17 @@ As an additional test the velocity of the movement along the figure-eight trajec
   </tr>
 </table>
 
+The performance of the reconstruction model was compared to an equivalent model without an LSTM layer (using a dense layer instead). The animation below illustrates the performance comparison between the two models. The results show that the model with integrated LSTM layer achieves a higher prediction accuracy. 
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">With LSTM Layer</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">With Dense Layer</div>
+      <img src="results/2D reconstruction/exp reconstruction/no_lstm_polynomial_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
