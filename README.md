@@ -63,10 +63,11 @@ The 2D experimental model was trained with a spiral trajectory and evaluated on 
 <style>
   table {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
   }
   td {
-    text-align: center;
+    text-align: center; 
+    vertical-align: top;
   }
   .cell-title {
     font-weight: bold; 
@@ -85,7 +86,7 @@ The 2D experimental model was trained with a spiral trajectory and evaluated on 
       <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="45%">
     </td>
     <td>
-      <div class="cell-title">Figure-Eight Trajectory</div>
+      <div class="cell-title">Eight Trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="45%">
     </td>
   </tr>
