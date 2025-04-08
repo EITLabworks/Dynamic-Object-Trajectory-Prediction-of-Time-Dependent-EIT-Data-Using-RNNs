@@ -44,10 +44,6 @@ EIT data were acquired in both simulated and experimental settings. Simultions w
 
 The 2D simulation model was trained on a spiral trajectory and tested on voltage measurements from circular and eight trajectory, all generated via FEM simulations. The results demonstrate high predicition accuracy for the proposed resonstruction network.
 
-<p align="center">
-  <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif">
-</p>
-
 <div align="center">
   <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif" width="45%" />
   <img src="results/2D reconstruction/sim reconstruction/eight_recon.gif" width="45%" />
