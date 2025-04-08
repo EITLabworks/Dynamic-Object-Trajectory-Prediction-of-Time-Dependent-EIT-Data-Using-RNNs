@@ -38,9 +38,9 @@ In the second training stage, the LSTM mapper was trained in a supervised manner
 
 EIT data were acquired in both simulated and experimental settings. Simultions were performed using FEM-based modeling with the pyEIT package, while experimental data were collected using an EIT water tank. For 2D data, both FEM simulation and experimental measurements were conducted on a single electrode plane, yielding $32^2$ voltage data points per frame. For 3D data, experimental measurements with two electrode planes were performed, resulting in $64^2$ voltage data points per frame. The EIT data were collected by tracking an acrylic ball along predefined trajectories at discrete positions. In 2D space, a circular, spiral, eight, polynomial, square trajectory were used. In 3D space, the trajectories uses were a helix, a spiral helix and a circular sine wave.
 
-## Results 
+# Results 
 
-# 2D simulation model
+## 2D simulation model
 
 The 2D simulation model was trained on a spiral trajectory and tested on circular and eight shaped trajectory. The results demonstrate high predicition accuracy for the proposed resonstruction network.
 
@@ -58,7 +58,7 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 </table>
 
 
-# 2D experimental model
+## 2D experimental model
 
 The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the animation provided. 
 
