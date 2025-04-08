@@ -60,44 +60,25 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 
 The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the animation provided. 
 
-<style>
-  table {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  td {
-    text-align: center; 
-    vertical-align: top;
-  }
-  .cell-title {
-    font-weight: bold; 
-    margin-bottom: 10px; 
-  }
-  img {
-    display: block; 
-    margin: 0 auto; 
-  }
-</style>
-
 <table>
   <tr>
-    <td>
-      <div class="cell-title">Circle Trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="45%">
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 10px;">Circle Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="100%">
     </td>
-    <td>
-      <div class="cell-title">Eight Trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="45%">
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 10px;">Eight Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="100%">
     </td>
   </tr>
   <tr>
-    <td>
-      <div class="cell-title">Polynomial Trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="45%">
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 10px;">Polynomial Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="100%">
     </td>
-    <td>
-      <div class="cell-title">Square Trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="45%">
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 10px;">Square Trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="100%">
     </td>
   </tr>
 </table>
