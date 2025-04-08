@@ -89,11 +89,13 @@ As an additional test the velocity of the movement along the figure-eight trajec
 
 <table>
   <tr>
-    <td>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif">
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">Normal velocity</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="70%">
     </td>
-    <td>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif">
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">Increased velocity</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif" width="70%">
     </td>
   </tr>
 </table>
