@@ -290,6 +290,35 @@ def load_exp_data(data_path, data_set):
     return voltage_array, temp_array, timestamp_array, position_array
 
 
+def transform_position(position):
+
+    center_offset = position[0]
+    position_centered = position - center_offset
+    tank_radius = 97       
+    position_scaled_centered = position_centered / tank_radius
+    
+    return position_scaled_centered[1:]
+
+def create_anomaly(mesh_obj, x, y, r):
+
+    anomaly = [PyEITAnomaly_Circle(center=[x, y], r=r, perm=0.9)]
+    ms = mesh.set_perm(mesh_obj, anomaly=anomaly, background=0.1)
+    
+    return ms
+    
+def create_gamma(positions):
+    
+    gamma_list = []
+    n_el = 32
+    mesh_obj = mesh.create(n_el, h0=0.05)
+    for pos in positions:
+        x, y = pos
+        
+        ms = create_anomaly(mesh_obj, x, y, 0.15)
+        gamma_list.append(ms.perm_array)
+    
+    return np.array(gamma_list)  
+
 def load_2Ddata(file_path, file_name, data_type, use_mean= True):
 
     if data_type == "sim":
@@ -299,7 +328,7 @@ def load_2Ddata(file_path, file_name, data_type, use_mean= True):
         voltage_normalized = (voltage - np.mean(voltage)) / np.std(voltage)
         
         gamma = gamma.reshape(-1, 2840, 1)
-        
+        voltage_normalized = voltage_normalized.reshape(-1, 32, 32, 1)
         voltage_seq, gamma_seq = seq_data(voltage_normalized, gamma, n_seg=4)
 
         print("Data loading complete!")
@@ -307,29 +336,35 @@ def load_2Ddata(file_path, file_name, data_type, use_mean= True):
         return voltage_seq, gamma_seq, pos
     
     else:
+        
         print("Loading experimental data...")
         voltage, temp, timestamp, position = load_exp_data(file_path, file_name)
+
         print("Calculating absolute voltages...")
-        voltage_abs = np.abs(voltage)
+        voltage_abs = np.abs(voltage) 
+    
         print("Normalizing data...")
-        voltage_normalized = (voltage - np.mean(voltage)) / np.std(voltage)
+        voltage_normalized = (voltage_abs - np.mean(voltage_abs)) / np.std(voltage_abs)
+
         print("Subtracting voltage measurements from empty tank...")
         voltage_diff = voltage_normalized - voltage_normalized[0]
         voltage_diff = voltage_diff[1:]  
-        
+
         if use_mean:
             print("Calculating mean of voltage differences...")
             voltage_diff = np.mean(voltage_diff, axis=1)
- 
+    
+
         print("Transforming position data...")
         trans_pos = transform_position(position)
         print(trans_pos.shape)
-   
+         
         print("Creating gamma...")
         gamma = create_gamma(trans_pos)
         print(gamma.shape)
-        gamma = gamma.reshape(-1, 2840, 1)
-
+        gamma = gamma.reshape(-1, 2840,1)
+        voltage_diff = voltage_diff.reshape(-1, 32, 32, 1)
+    
         if use_mean:
             print("Processing sequences with mean...")
             voltage_seq, gamma_seq = seq_data(voltage_diff, gamma, n_seg=4)
@@ -337,21 +372,20 @@ def load_2Ddata(file_path, file_name, data_type, use_mean= True):
             print("Processing sequences for each measurement...")
             voltage_sequences = []
             gamma_sequences = []
-    
+        
             for idx in tqdm(range(5), desc="Processing measurement sequences"):
                 v_seq, g_seq = seq_data(voltage_diff[:, idx, :, :], gamma, n_seg=4)
                 voltage_sequences.append(v_seq)
                 gamma_sequences.append(g_seq)
-                
+            
             print("Concatenating sequences...")
             voltage_seq = np.concatenate(voltage_sequences, axis=0)
             gamma_seq = np.concatenate(gamma_sequences, axis=0)
-        
+    
         print("Data loading complete!")
-        
-        return voltage_seq, gamma_seq, temp, timestamp
+        return voltage_seq, gamma_seq, trans_pos, temp, timestamp
 
-def transform_position(position):
+def transform_position_3D(position):
     
     center_offset = np.array([position[0,0], position[0,1], 0]) 
     position_centered = position - center_offset
@@ -368,7 +402,7 @@ def transform_position(position):
     
     return position_centered[1:]
 
-def create_gamma(position):
+def create_gamma_3D(position):
     boundary = Boundary()
     gamma = list()
     diameter_labels = list()
@@ -411,10 +445,10 @@ def load_3Ddata(file_path, file_name, use_mean= False):
         voltage_diff = np.mean(voltage_diff, axis=1)
     
     print("Transforming position data...")
-    trans_pos = transform_position(position)
+    trans_pos = transform_position_3D(position)
     
     print("Creating gamma...")
-    gamma, _, _, _ = create_gamma(trans_pos)
+    gamma, _, _, _ = create_gamma_3D(trans_pos)
     
     if use_mean:
         print("Processing sequences with mean...")
