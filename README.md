@@ -46,15 +46,19 @@ EIT data were acquired in both simulated and experimental settings. Simulations 
 
 The 2D simulation model was trained on a spiral trajectory and tested on circular and eight shaped trajectory. The results demonstrate high predicition accuracy for the proposed resonstruction network.
 
-<table>
+<table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Circle Trajectory</div>
-      <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Circle Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Eight Trajectory</div>
-      <img src="results/2D reconstruction/sim reconstruction/eight_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Eight Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/sim reconstruction/eight_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
