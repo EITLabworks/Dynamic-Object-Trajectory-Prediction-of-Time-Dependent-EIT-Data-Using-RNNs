@@ -48,15 +48,21 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px; text-align:center; width:100%;">Circle Trajectory</div>
-      <div style="width:440px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Circle Trajectory
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Eight Trajectory
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px; text-align:center; width:100%;">Eight Trajectory</div>
-      <div style="width:440px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/sim reconstruction/eight_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
