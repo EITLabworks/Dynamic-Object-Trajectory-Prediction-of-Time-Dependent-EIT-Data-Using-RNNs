@@ -66,36 +66,42 @@ The 2D experimental model was trained on a spiral trajectory. The trained model 
 
 ### Prediction of different trajectories
 
-<table style="width: 100%; table-layout: fixed;">
-  <tr>
-    <td style="width: 50%; height: 300px; text-align: center; vertical-align: top;">
-      <div style="font-weight: bold; margin-bottom: 20px;">circle trajectory</div>
-      <div style="height: 250px; display: flex; align-items: center; justify-content: center;">
-        <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
-      </div>
-    </td>
-    <td style="width: 50%; height: 300px; text-align: center; vertical-align: top;">
-      <div style="font-weight: bold; margin-bottom: 20px;">eight trajectory</div>
-      <div style="height: 250px; display: flex; align-items: center; justify-content: center;">
-        <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 50%; height: 300px; text-align: center; vertical-align: top;">
-      <div style="font-weight: bold; margin-bottom: 20px;">polynomial trajectory</div>
-      <div style="height: 250px; display: flex; align-items: center; justify-content: center;">
-        <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
-      </div>
-    </td>
-    <td style="width: 50%; height: 300px; text-align: center; vertical-align: top;">
-      <div style="font-weight: bold; margin-bottom: 20px;">square trajectory</div>
-      <div style="height: 250px; display: flex; align-items: center; justify-content: center;">
-        <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
-      </div>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: #f8f8f8; padding: 10px; text-align: center; font-weight: bold; border-bottom: 1px solid #ddd;">
+      Circle Trajectory
+    </div>
+    <div style="height: 250px; display: flex; align-items: center; justify-content: center; padding: 10px;">
+      <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
+    </div>
+  </div>
+  <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: #f8f8f8; padding: 10px; text-align: center; font-weight: bold; border-bottom: 1px solid #ddd;">
+      Eight Trajectory
+    </div>
+    <div style="height: 250px; display: flex; align-items: center; justify-content: center; padding: 10px;">
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
+    </div>
+  </div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+  <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: #f8f8f8; padding: 10px; text-align: center; font-weight: bold; border-bottom: 1px solid #ddd;">
+      Polynomial Trajectory
+    </div>
+    <div style="height: 250px; display: flex; align-items: center; justify-content: center; padding: 10px;">
+      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
+    </div>
+  </div>
+  <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: #f8f8f8; padding: 10px; text-align: center; font-weight: bold; border-bottom: 1px solid #ddd;">
+      Square Trajectory
+    </div>
+    <div style="height: 250px; display: flex; align-items: center; justify-content: center; padding: 10px;">
+      <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" style="max-width: 100%; max-height: 230px; object-fit: contain;">
+    </div>
+  </div>
+</div>
 
 ### Prediction with different velocities
 
