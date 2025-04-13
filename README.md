@@ -4,22 +4,31 @@ This project presents a novel approach for dynamic image reconstruction of Elect
 
 ## Reconstruction network architecture
 
-The reconstruction model consists of two core components: a mapper with an integrated LSTM layer at the output and a VAE decoder. The architecture is illustrated in figure...
+The reconstruction model consists of two core components: a mapper with an integrated LSTM layer at the output and a VAE decoder. The architecture is illustrated in figure 1.
 
 <p align="center">
-  <img src="images/reconstruction_model.png" alt="Empty_mesh" width="400px">
+  
+  <img src="images/reconstruction_model.png" alt="Empty_mesh" width="50%">
+
 </p>
 <p align="center" style="font-size: smaller;">
-  <em>Fig. 1: Overview of the temporal data arrangement for predicting a subsequent construction based on previous measurements. The blue boxes represent the EIT measurements, and the corresponding cross-sectional conductivity distribution in the electrode plane is depicted in the bottom boxes.</em>
+  <em>Figure. 1: Architecture of reconstruction model.</em>
 </p>
 
 The LSTM mapper, denoted as $\Xi$, processes temporal sequences of voltage measurements and maps it to the latent space $\mathbf{h}$. Subsequently, the VAE decoder, denoted as $\Psi$, reconstructs the latent representation into a conductivity distribution. The complete reconstruction network $\Gamma$ is defined as the composition of these mapping processes:
 
 $$
-\Gamma := \Xi \circ \Psi : \mathbf{V} \mapsto \mathbf{h} \mapsto \hat{\gamma}_{t+1}
+\Gamma := \Xi \circ \Psi : V_{t} \mapsto h_{t+1} \mapsto \hat{\gamma}_{t+1}
 $$
 
-Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution at time $t+1$. Figure ... illustrates the working principle of the reconstruction network, demonstration how a sequence of voltage measurements as input of the network is uswd to predict the future conductivity distribution.
+Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution at time $t+1$. Figure 2 illustrates the working principle of the reconstruction network, demonstration how a sequence of voltage measurements as input of the network is uswd to predict the future conductivity distribution.
+
+<p align="center">
+  <img src="images/reconstruction_process.png" width="50%">
+</p>
+<p align="center" style="font-size: smaller;">
+  <em>Figure. 1: Overview of the reconstruction process of the proposed reconstruction model. A sequence of four voltage measurements is used to predict the conductivity distribution of the next time step.</em>
+</p>
 
 ## Training of reconstruction network
 
@@ -31,14 +40,130 @@ In the second training stage, the LSTM mapper was trained in a supervised manner
 
 EIT data were acquired in both simulated and experimental settings. Simultions were performed using FEM-based modeling with the pyEIT package, while experimental data were collected using an EIT water tank. For 2D data, both FEM simulation and experimental measurements were conducted on a single electrode plane, yielding $32^2$ voltage data points per frame. For 3D data, experimental measurements with two electrode planes were performed, resulting in $64^2$ voltage data points per frame. The EIT data were collected by tracking an acrylic ball along predefined trajectories at discrete positions. In 2D space, a circular, spiral, eight, polynomial, square trajectory were used. In 3D space, the trajectories uses were a helix, a spiral helix and a circular sine wave.
 
-## Results 
+# Results 
 
-#2D simulation model
+## 2D simulation model
 
-The 2D simulation model was trained on a spiral trajectory and tested on voltage measurements from circular and eight trajectory, all generated via FEM simulations. The results demonstrate high predicition accuracy for the proposed resonstruction network.
+The 2D simulation model was trained on a spiral trajectory and tested on circular and eight shaped trajectory. The results demonstrate high predicition accuracy for the proposed resonstruction network.
 
-#2D experimental model
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">Circle Trajectory</div>
+      <img src="results/2D reconstruction/sim reconstruction/circle_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">Eight Trajectory</div>
+      <img src="results/2D reconstruction/sim reconstruction/eight_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
 
-The 2D experimental model was trained with a spiral trajectory and evaluated using voltage measurements conducted from circular, polynomial, eight and square trajectories. The network exhibited robust performance across these diverse motion patterns as can be seen in the provided gifs. 
 
-As an additional test the velocity of the movement along the eight trajectory was increased by increasing the distance between the individual positions. The two gifs show the comparison 
+## 2D experimental model
+
+The 2D experimental model was trained on a spiral trajectory. The trained model was then evaluated on different test trajectories to assess its generalisation capabilities. To test the robustness to velocity variations, an additional experiment was performed where the movement speed was increased by increasing the distance between each discrete point. A comparative analysis between model architectures with and without an LSTM layer was also performed to highlight the capability of the LSTM layer to model the time-dependent behavior of moving objects. The following figures show the results of the tests.
+
+### Prediction of different trajectories
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">circle trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">eight trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="70%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">polynomial trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">square trajectory</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
+
+### Prediction with different velocities
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">normal velocity</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">increased velocity</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
+
+### Comparision of model with and without LSTM layer 
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">with LSTM layer</div>
+      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">without LSTM layer</div>
+      <img src="results/2D reconstruction/exp reconstruction/no_lstm_polynomial_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
+
+## 3D experimental model
+
+The 3D experimental model was trained using a spiral helix trajectory with a radius that decreases with increasing height. Like the 2D experimental model, the 3D model was tested on various test trajectory (a normal helix trajectory and a circular sine wave). Different velocity variations were also tested and, finally, a comparison between the model with and without LSTM layer was performed. The following figures show the results of the tests.
+
+### Prediction of different trajectories
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">helix trajectory</div>
+      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">circular sine wave trajectory</div>
+      <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
+
+### Prediction with different velocities
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">normal velocity</div>
+      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">increased velocity</div>
+      <img src="results/3D reconstruction/lstm_helix_fast_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
+
+### Comparision of model with and without LSTM layer 
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">with LSTM layer</div>
+      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">without LSTM layer</div>
+      <img src="results/3D reconstruction/no_lstm_helix_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
