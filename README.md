@@ -127,11 +127,11 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 <table>
   <tr>
-    <td align="center" style="text-align: center;">
+     <td style="width:50%; text-align:center; padding:15px; border:1px solid #333;">
       <div style="font-weight: bold; margin-bottom: 20px;">helix trajectory</div>
       <img src="results/3D reconstruction/lstm_helix_recon.gif" width="90%">
     </td>
-    <td align="center" style="text-align: center;">
+    <td style="width:50%; text-align:center; padding:15px; border:1px solid #333;">
       <div style="font-weight: bold; margin-bottom: 20px;">circular sine wave trajectory</div>
       <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" width="90%">
     </td>
