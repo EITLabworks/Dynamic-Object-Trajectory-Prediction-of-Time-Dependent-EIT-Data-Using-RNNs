@@ -174,21 +174,25 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 ### Prediction of different trajectories
 
-<table width="1000px" style="table-layout: fixed; background-color:#0a0a16; color:white; border-collapse:collapse; margin-bottom:30px;">
+<table style="width:100%; background-color:#0a0a16; color:white; border-collapse:collapse; border:1px solid #333;">
   <tr>
-    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; font-weight:bold;">
+    <td width="50%" style="border:1px solid #333; text-align:center; padding:8px 0; font-weight:bold;">
       Helix Trajectory
-    </th>
-    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; font-weight:bold;">
+    </td>
+    <td width="50%" style="border:1px solid #333; text-align:center; padding:8px 0; font-weight:bold;">
       Circular Sine Wave Trajectory
-    </th>
+    </td>
   </tr>
   <tr>
-    <td width="500px" height="400px" style="vertical-align:middle; padding:0; border:1px solid #333; text-align:center;">
-      <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:90%; max-height:90%; display:block; margin:0 auto;">
+    <td style="border:1px solid #333; position:relative; height:350px; padding:0;">
+      <div style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+        <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:90%; max-height:90%;">
+      </div>
     </td>
-    <td width="500px" height="400px" style="vertical-align:middle; padding:0; border:1px solid #333; text-align:center;">
-      <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" style="max-width:90%; max-height:90%; display:block; margin:0 auto;">
+    <td style="border:1px solid #333; position:relative; height:350px; padding:0;">
+      <div style="position:absolute; top:0; left:0; width:100%; height:100%; display:flex; justify-content:center; align-items:center;">
+        <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" style="max-width:90%; max-height:90%;">
+      </div>
     </td>
   </tr>
 </table>
