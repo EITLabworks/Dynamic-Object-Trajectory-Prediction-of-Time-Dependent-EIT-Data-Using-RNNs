@@ -21,7 +21,7 @@ $$
 \Gamma := \Xi \circ \Psi : V_{t} \mapsto h_{t+1} \mapsto \hat{\gamma}_{t+1}
 $$
 
-Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$ is the predicted latent space representation, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution at time $t+1$. Figure 2 illustrates the working principle of the reconstruction network, demonstration how a sequence of voltage measurements as input of the network is uswd to predict the future conductivity distribution.
+Here, $V_{t}$ represents the voltage measurements at time $t$, $h_{t+1}$ the predicted latent space representation at time $t+1$, and $\hat{\gamma}_{t+1}$ is the reconstructed conductivity distribution at time $t+1$. Figure 2 illustrates the working principle of the reconstruction network, demonstration how a sequence of voltage measurements as input of the network is uswd to predict the future conductivity distribution.
 
 <p align="center">
   <img src="images/reconstruction_process.png" width="50%">
@@ -34,7 +34,7 @@ Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$
 
 The training process was conducted in two stages. In the first stage, the VAE was trained in an unsupervised using synthetically generated conductivity distributions for both 2D and 3D space.
 For the 2D reconstructions, a triangular mesh representing the electrode plane of a cylindrical tank was used. For 3D reconstructions, a voxel-based approach was used.
-In the second training stage, the LSTM mapper was trained in a supervised manner. The VAE encoder generated a latent representations of known conductity distributions, which served as labels for the supervised learning of the LSTM mapper. Sequences of voltage measurements $\mathbf{V}$ were paired with the corresponding latent representations of future conductivity distributions.
+In the second training stage, the LSTM mapper was trained in a supervised manner. The VAE encoder generated a latent representations of known conductity distributions, which served as labels for the supervised learning of the LSTM mapper. Sequences of voltage measurements were paired with the corresponding latent representations of future conductivity distributions.
 
 ## EIT data collection
 
