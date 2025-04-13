@@ -12,7 +12,7 @@ The reconstruction model consists of two core components: a mapper with an integ
 
 </p>
 <p align="center" style="font-size: smaller;">
-  <em>Figure. 1: Architecture of reconstruction model.</em>
+  <em>Figure 1: Architecture of reconstruction model.</em>
 </p>
 
 The LSTM mapper, denoted as $\Xi$, processes temporal sequences of voltage measurements and maps it to the latent space $\mathbf{h}$. Subsequently, the VAE decoder, denoted as $\Psi$, reconstructs the latent representation into a conductivity distribution. The complete reconstruction network $\Gamma$ is defined as the composition of these mapping processes:
@@ -27,7 +27,7 @@ Here, $\mathbf{V}$ represents the voltage measurements at time $t$, $\mathbf{h}$
   <img src="images/reconstruction_process.png" width="50%">
 </p>
 <p align="center" style="font-size: smaller;">
-  <em>Figure. 1: Overview of the reconstruction process of the proposed reconstruction model. A sequence of four voltage measurements is used to predict the conductivity distribution of the next time step.</em>
+  <em>Figure 2: Overview of the reconstruction process of the proposed reconstruction model. A sequence of four voltage measurements is used to predict the conductivity distribution of the next time step.</em>
 </p>
 
 ## Training of reconstruction network
