@@ -108,17 +108,20 @@ The 2D experimental model was trained on a spiral trajectory. The trained model 
 
 <table width="800px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">with LSTM layer</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="70%">
+    <td width="400px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">With LSTM Layer</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">without LSTM layer</div>
-      <img src="results/2D reconstruction/exp reconstruction/no_lstm_polynomial_recon.gif" width="70%">
+    <td width="400px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Without LSTM Layer</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/no_lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
-
 ## 3D experimental model
 
 The 3D experimental model was trained using a spiral helix trajectory with a radius that decreases with increasing height. Like the 2D experimental model, the 3D model was tested on various test trajectory (a normal helix trajectory and a circular sine wave). Different velocity variations were also tested and, finally, a comparison between the model with and without LSTM layer was performed. The following figures show the results of the tests.
@@ -127,13 +130,17 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 <table width="800px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">helix trajectory</div>
-      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="90%">
+    <td width="400px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Helix Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">circular sine wave trajectory</div>
-      <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" width="90%">
+    <td width="400px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Circular Sine Wave Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
