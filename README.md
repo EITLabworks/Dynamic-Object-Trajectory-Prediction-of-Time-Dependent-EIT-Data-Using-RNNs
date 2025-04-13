@@ -174,21 +174,26 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 ### Prediction of different trajectories
 
-<table style="width:100%; background-color:#0a0a16; color:white; border-collapse:collapse;">
+
+<table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td style="border:1px solid #333; text-align:center; padding:8px 0; font-weight:bold;">
-      Helix Trajectory
-    </td>
-    <td style="border:1px solid #333; text-align:center; padding:8px 0; font-weight:bold;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+     Helix Trajectory
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
       Circular Sine Wave Trajectory
-    </td>
+    </th>
   </tr>
   <tr>
-    <td style="border:1px solid #333; text-align:center;">
-      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="80%">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td style="border:1px solid #333; text-align:center;">
-      <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" width="80%">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
