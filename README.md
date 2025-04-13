@@ -77,29 +77,41 @@ The 2D experimental model was trained on a spiral trajectory. The trained model 
 
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Circle Trajectory</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Circle Trajectory
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Eight Trajectory
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Eight Trajectory</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
   </tr>
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Polynomial Trajectory</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Polynomial Trajectory
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Square Trajectory
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Square Trajectory</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
@@ -110,15 +122,21 @@ The 2D experimental model was trained on a spiral trajectory. The trained model 
 
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Normal Velocity</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Normal Velocity
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Increased Velocity
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Increased Velocity</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
@@ -129,20 +147,27 @@ The 2D experimental model was trained on a spiral trajectory. The trained model 
 
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">With LSTM Layer</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      With LSTM Layer
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Without LSTM Layer
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Without LSTM Layer</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/no_lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
   </tr>
 </table>
+
 ## 3D experimental model
 
 The 3D experimental model was trained using a spiral helix trajectory with a radius that decreases with increasing height. Like the 2D experimental model, the 3D model was tested on various test trajectory (a normal helix trajectory and a circular sine wave). Different velocity variations were also tested and, finally, a comparison between the model with and without LSTM layer was performed. The following figures show the results of the tests.
@@ -151,15 +176,21 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Helix trajectory</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Helix Trajectory
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Circular Sine Wave Trajectory
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Circular Sine Wave Trajectory</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
@@ -170,15 +201,21 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Normal Velocity</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Normal Velocity
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Increased Velocity
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Increased Velocity</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/3D reconstruction/lstm_helix_fast_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
@@ -189,15 +226,21 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">With LSTM Layer</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      With LSTM Layer
+    </th>
+    <th width="500px" style="text-align:center; padding:10px 0; border:1px solid #333; background-color:#1a1a1a; font-weight:bold;">
+      Without LSTM Layer
+    </th>
+  </tr>
+  <tr>
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Without LSTM Layer</div>
-      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+    <td width="500px" height="300px" style="text-align:center; vertical-align:middle; padding:15px; border:1px solid #333;">
+      <div style="height:280px; display:flex; align-items:center; justify-content:center;">
         <img src="results/3D reconstruction/no_lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
