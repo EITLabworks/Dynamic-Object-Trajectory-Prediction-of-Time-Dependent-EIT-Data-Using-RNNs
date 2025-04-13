@@ -66,55 +66,67 @@ The 2D experimental model was trained on a spiral trajectory. The trained model 
 
 ### Prediction of different trajectories
 
-<table>
+<table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">circle trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Circle Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">eight trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Eight Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
   <tr>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">polynomial trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Polynomial Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">square trajectory</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Square Trajectory</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
 
 ### Prediction with different velocities
 
-<table>
+<table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">normal velocity</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Normal Velocity</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">increased velocity</div>
-      <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif" width="70%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Increased Velocity</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
 
 ### Comparision of model with and without LSTM layer 
 
-<table width="800px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
+<table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td width="400px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
       <div style="font-weight:bold; margin-bottom:10px;">With LSTM Layer</div>
       <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
     </td>
-    <td width="400px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
       <div style="font-weight:bold; margin-bottom:10px;">Without LSTM Layer</div>
       <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
         <img src="results/2D reconstruction/exp reconstruction/no_lstm_polynomial_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
@@ -131,7 +143,7 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 <table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
     <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
-      <div style="font-weight:bold; margin-bottom:10px;">Helix Trajectory</div>
+      <div style="font-weight:bold; margin-bottom:10px;">Helix trajectory</div>
       <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
         <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
       </div>
@@ -147,30 +159,38 @@ The 3D experimental model was trained using a spiral helix trajectory with a rad
 
 ### Prediction with different velocities
 
-<table>
+<table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">normal velocity</div>
-      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="90%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Normal Velocity</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">increased velocity</div>
-      <img src="results/3D reconstruction/lstm_helix_fast_recon.gif" width="90%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Increased Velocity</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/lstm_helix_fast_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
 
 ### Comparision of model with and without LSTM layer 
 
-<table>
+<table width="1000px" style="table-layout: fixed; background-color:#1a1a1a; color:white; border-collapse:collapse; margin-bottom:30px;">
   <tr>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">with LSTM layer</div>
-      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="90%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">With LSTM Layer</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
-    <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">without LSTM layer</div>
-      <img src="results/3D reconstruction/no_lstm_helix_recon.gif" width="90%">
+    <td width="500px" height="350px" style="text-align:center; vertical-align:top; padding:15px 30px; border:1px solid #333;">
+      <div style="font-weight:bold; margin-bottom:10px;">Without LSTM Layer</div>
+      <div style="width:340px; height:300px; margin:0 auto; display:flex; align-items:center; justify-content:center;">
+        <img src="results/3D reconstruction/no_lstm_helix_recon.gif" style="max-width:280px; max-height:280px; object-fit:contain;">
+      </div>
     </td>
   </tr>
 </table>
