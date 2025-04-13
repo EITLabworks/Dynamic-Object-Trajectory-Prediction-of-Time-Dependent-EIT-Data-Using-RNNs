@@ -60,28 +60,28 @@ The 2D simulation model was trained on a spiral trajectory and tested on circula
 
 ## 2D experimental model
 
-### Prediction of different trajectories
+The 2D experimental model was trained on a spiral trajectory. The trained model was then evaluated on different test trajectories to assess its generalisation capabilities. To test the robustness to velocity variations, an additional experiment was performed where the movement speed was increased by increasing the distance between each discrete point. A comparative analysis between model architectures with and without an LSTM layer was also performed to highlight the capability of the LSTM layer to model the time-dependent behavior of moving objects. The following figures show the results of the tests.
 
-The 2D experimental model was trained with a spiral trajectory and evaluated on a circular, polynomial, eight and square shaped trajectory. The network showed robust performance across these different motion patterns, as shown in the animation provided. 
+### Prediction of different trajectories
 
 <table>
   <tr>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Circle Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">circle trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_circle_recon.gif" width="70%">
     </td>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Eight Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">eight trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="70%">
     </td>
   </tr>
   <tr>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Polynomial Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">polynomial trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="70%">
     </td>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Square Trajectory</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">square trajectory</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_square_recon.gif" width="70%">
     </td>
   </tr>
@@ -89,16 +89,14 @@ The 2D experimental model was trained with a spiral trajectory and evaluated on 
 
 ### Prediction with different velocities
 
-As an additional test the velocity of the movement along the figure-eight trajectory was increased by increasing the distance between the individual discrete positions along the trajectory. This results in greater spacing between consecutive EIT measurements, reducing spatial correlation between them. Despite this increased distance points, the models demonstrate robust performance, indicating their ability to reliably predict future conductivity distributions regardless of the reduced spatial correlation.
-
 <table>
   <tr>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Normal velocity</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">normal velocity</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_eight_recon.gif" width="70%">
     </td>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">Increased velocity</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">increased velocity</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_eight_fast_recon.gif" width="70%">
     </td>
   </tr>
@@ -106,19 +104,64 @@ As an additional test the velocity of the movement along the figure-eight trajec
 
 ### Comparision of model with and without LSTM layer 
 
-The performance of the reconstruction model was compared to an equivalent model without an LSTM layer (using a dense layer instead). The animation below illustrates the performance comparison between the two models. The results show that the model with integrated LSTM layer achieves a higher prediction accuracy. This highlights the advantage of using LSTM layers for processing sequential data.
-
 <table>
   <tr>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">With LSTM Layer</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">with LSTM layer</div>
       <img src="results/2D reconstruction/exp reconstruction/lstm_polynomial_recon.gif" width="70%">
     </td>
     <td align="center" style="text-align: center;">
-      <div style="font-weight: bold; margin-bottom: 20px;">With Dense Layer</div>
+      <div style="font-weight: bold; margin-bottom: 20px;">without LSTM layer</div>
       <img src="results/2D reconstruction/exp reconstruction/no_lstm_polynomial_recon.gif" width="70%">
     </td>
   </tr>
 </table>
 
 ## 3D experimental model
+
+The 3D experimental model was trained using a spiral helix trajectory with a radius that decreases with increasing height. Like the 2D experimental model, the 3D model was tested on various test trajectory (a normal helix trajectory and a circular sine wave). Different velocity variations were also tested and, finally, a comparison between the model with and without LSTM layer was performed. The following figures show the results of the tests.
+
+### Prediction of different trajectories
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">helix trajectory</div>
+      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">circular sine wave trajectory</div>
+      <img src="results/3D reconstruction/lstm_circ_sine_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
+
+### Prediction with different velocities
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">normal velocity</div>
+      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">increased velocity</div>
+      <img src="results/3D reconstruction/lstm_helix_fast_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
+
+### Comparision of model with and without LSTM layer 
+
+<table>
+  <tr>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">with LSTM layer</div>
+      <img src="results/3D reconstruction/lstm_helix_recon.gif" width="70%">
+    </td>
+    <td align="center" style="text-align: center;">
+      <div style="font-weight: bold; margin-bottom: 20px;">without LSTM layer</div>
+      <img src="results/3D reconstruction/no_lstm_helix_recon.gif" width="70%">
+    </td>
+  </tr>
+</table>
