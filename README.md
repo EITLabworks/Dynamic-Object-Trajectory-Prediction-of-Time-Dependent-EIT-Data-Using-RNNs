@@ -7,7 +7,9 @@ This project presents a novel approach for dynamic image reconstruction of Elect
 The reconstruction model consists of two core components: a mapper with an integrated LSTM layer at the output and a VAE decoder. The architecture is illustrated in figure 1.
 
 <p align="center">
+  
   <img src="images/reconstruction_model.png" alt="Empty_mesh" width="50%">
+
 </p>
 <p align="center" style="font-size: smaller;">
   <em>Figure. 1: Architecture of reconstruction model.</em>
