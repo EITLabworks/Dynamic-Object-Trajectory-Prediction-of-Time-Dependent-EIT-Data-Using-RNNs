@@ -1,3 +1,7 @@
+_Results of a Master's thesis_
+
+___
+
 # Dynamic-object-trajectory-prediction-of-time-dependent-EIT-data-using-recurrent-neural-networks
 
 This project presents a novel approach for dynamic image reconstruction of Electrical Impedance Tomography (EIT). This approach uses a data-driven reconstruction model consisting of a Variational Autoencoder (VAE) and a mapper with an integrated Long-Short-Term-Memory (LSTM) unit. The network has been specically designed for dynamic object trajectory prediction, allowing accurate tracking of an object's movement within the EIT tank and also predicting future object positions by exploiting temporal information in sequential EIT data. This approach was developed for 2D and 3D reconstructions of object motion. Data collection was performed using FEM simulation (pyEIT forward solver) for simulation data and an EIT tank equipped with two electrode rings (32 electrodes each) and a Sciospec EIT device for experimental data. In this project, the reconstruction network was trained and tested on simulation data, experimental EIT data collected during 2D motion and experimental EIT data collected during 3D motion.
