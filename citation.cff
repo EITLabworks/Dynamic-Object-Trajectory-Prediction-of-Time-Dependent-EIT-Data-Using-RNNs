@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: >-
+      Dynamic Object Trajectory Prediction of Time Dependent EIT Data Using RNNs
+message: >-
+  If you use this repository, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Peer
+    family-names: Jürgens
+    email: peer.juergens@uni-rostock.de
+    affiliation: Universität Rostock
+  - given-names: Jacob
+    family-names: Thönes
+    email: jacob.thoenes@uni-rostock.de
+    affiliation: Universität Rostock
+    orcid: 'https://orcid.org/0000-0003-2826-5281'
+repository-code: 'https://github.com/EITLabworks/Dynamic-Object-Trajectory-Prediction-of-Time-Dependent-EIT-Data-Using-RNNs'
+url: 'https://github.com/EITLabworks/Dynamic-Object-Trajectory-Prediction-of-Time-Dependent-EIT-Data-Using-RNNs'
+keywords:
+  -  Electrical Impedance Tomography
+  -  Machine Learning
+  -  LSTM
+license: MIT
+version: 0.1.0
+date-released: '2025'
